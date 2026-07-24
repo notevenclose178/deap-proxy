@@ -1,7 +1,15 @@
 {
-    "functions": {
-        "api/feedback.js": {
-            "runtime": "nodejs18.x"
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/feedback.js",
+            "use": "@vercel/node@2"
         }
-    }
+    ],
+    "routes": [
+        {
+            "src": "/api/feedback",
+            "dest": "/api/feedback"
+        }
+    ]
 }
