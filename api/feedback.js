@@ -1,4 +1,3 @@
-// api/feedback.js
 export default async function handler(req, res) {
     // 只允许 POST 请求
     if (req.method !== 'POST') {
